@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-29T10:43:42.043517" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="D:\Study\6-semester\MTSD\TSIS 2\tests\signup.robot">
+<test id="s1-t1" name="Sign Up" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-29T10:43:42.581303" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-29T10:43:42.580850" elapsed="5.451036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-29T10:43:48.034024" level="INFO">Clicking element 'xpath=//a[text()='Sign up']'.</msg>
+<arg>xpath=//a[text()='Sign up']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-29T10:43:48.032914" elapsed="0.245637"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-29T10:43:48.279479" level="INFO">Typing text 'test_user123' into text field 'id=sign-username'.</msg>
+<msg time="2025-03-29T10:43:48.534252" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-29T10:43:48.534592" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A7534C25+3179557]
+	(No symbol) [0x00007FF7A71988A0]
+	(No symbol) [0x00007FF7A7028FFC]
+	(No symbol) [0x00007FF7A7074EB5]
+	(No symbol) [0x00007FF7A70A7C2A]
+	(No symbol) [0x00007FF7A70722D6]
+	(No symbol) [0x00007FF7A70A7E40]
+	(No symbol) [0x00007FF7A70D02F3]
+	(No symbol) [0x00007FF7A70A7A03]
+	(No symbol) [0x00007FF7A70706D0]
+	(No symbol) [0x00007FF7A7071983]
+	GetHandleVerifier [0x00007FF7A75967CD+3579853]
+	GetHandleVerifier [0x00007FF7A75AD1D2+3672530]
+	GetHandleVerifier [0x00007FF7A75A2153+3627347]
+	GetHandleVerifier [0x00007FF7A730092A+868650]
+	(No symbol) [0x00007FF7A71A2FFF]
+	(No symbol) [0x00007FF7A719F4A4]
+	(No symbol) [0x00007FF7A719F646]
+	(No symbol) [0x00007FF7A718EAA9]
+	BaseThreadInitThunk [0x00007FFF94247374+20]
+	RtlUserThreadStart [0x00007FFF9481CC91+33]
+</msg>
+<arg>id=sign-username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-29T10:43:48.279063" elapsed="0.262811">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A7534C25+3179557]
+	(No symbol) [0x00007FF7A71988A0]
+	(No symbol) [0x00007FF7A7028FFC]
+	(No symbol) [0x00007FF7A7074EB5]
+	(No symbol) [0x00007FF7A70A7C2A]
+	(No symbol) [0x00007FF7A70722D6]
+	(No symbol) [0x00007FF7A70A7E40]
+	(No symbol) [0x00007FF7A70D02F3]
+	(No symbol) [0x00007FF7A70A7A03]
+	(No symbol) [0x00007FF7A70706D0]
+	(No symbol) [0x00007FF7A7071983]
+	GetHandleVerifier [0x00007FF7A75967CD+3579853]
+	GetHandleVerifier [0x00007FF7A75AD1D2+3672530]
+	GetHandleVerifier [0x00007FF7A75A2153+3627347]
+	GetHandleVerifier [0x00007FF7A730092A+868650]
+	(No symbol) [0x00007FF7A71A2FFF]
+	(No symbol) [0x00007FF7A719F4A4]
+	(No symbol) [0x00007FF7A719F646]
+	(No symbol) [0x00007FF7A718EAA9]
+	BaseThreadInitThunk [0x00007FFF94247374+20]
+	RtlUserThreadStart [0x00007FFF9481CC91+33]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=sign-password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-29T10:43:48.542615" elapsed="0.000116"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[text()='Sign up']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-29T10:43:48.543198" elapsed="0.000072"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Sign up successful</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-03-29T10:43:48.543602" elapsed="0.000056"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-29T10:43:48.543918" elapsed="0.000048"/>
+</kw>
+<doc>New user registration</doc>
+<status status="FAIL" start="2025-03-29T10:43:42.578884" elapsed="5.965453">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A7534C25+3179557]
+	(No symbol) [0x00007FF7A71988A0]
+	(No symbol) [0x00007FF7A7028FFC]
+	(No symbol) [0x00007FF7A7074EB5]
+	(No symbol) [0x00007FF7A70A7C2A]
+	(No symbol) [0x00007FF7A70722D6]
+	(No symbol) [0x00007FF7A70A7E40]
+	(No symbol) [0x00007FF7A70D02F3]
+	(No symbol) [0x00007FF7A70A7A03]
+	(No symbol) [0x00007FF7A70706D0]
+	(No symbol) [0x00007FF7A7071983]
+	GetHandleVerifier [0x00007FF7A75967CD+3579853]
+	GetHandleVerifier [0x00007FF7A75AD1D2+3672530]
+	GetHandleVerifier [0x00007FF7A75A2153+3627347]
+	GetHandleVerifier [0x00007FF7A730092A+868650]
+	(No symbol) [0x00007FF7A71A2FFF]
+	(No symbol) [0x00007FF7A719F4A4]
+	(No symbol) [0x00007FF7A719F646]
+	(No symbol) [0x00007FF7A718EAA9]
+	BaseThreadInitThunk [0x00007FFF94247374+20]
+	RtlUserThreadStart [0x00007FFF9481CC91+33]
+</status>
+</test>
+<status status="FAIL" start="2025-03-29T10:43:42.046417" elapsed="6.502965"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Signup" id="s1" pass="0" fail="1" skip="0">Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
