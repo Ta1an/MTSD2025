@@ -20,7 +20,7 @@ Log Out Test
     Input Text    id=loginpassword    ${PASSWORD}
     Click Button    xpath=//button[text()='Log in']
     Wait Until Element Is Visible    id=logout2
-    Log    "Успешный вход: ${USERNAME}"
+    Log    "Login has been succesfully: ${USERNAME}"
 
     # Log out proccess
     Sleep    1s
